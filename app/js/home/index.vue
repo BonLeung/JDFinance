@@ -1,16 +1,20 @@
 <template>
   <div class="home">
-    <div>hello world</div>
-    <h1> hello world </h1>
+    <m-header></m-header>
   </div>
 </template>
 
 <script>
-export default {};
+import MHeader from '../public/header'
+
+export default {
+  components: {
+    MHeader
+  }
+}
 </script>
 
-<style lang="scss" scoped>
-@import '~css/reset.scss';
+<style lang="scss">
 
 .home {
   color: red;
