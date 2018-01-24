@@ -6,10 +6,12 @@
 </template>
 
 <script>
-export default {}
+export default {};
 </script>
 
 <style lang="scss" scoped>
+@import '~css/reset.scss';
+
 .home {
   color: red;
 }

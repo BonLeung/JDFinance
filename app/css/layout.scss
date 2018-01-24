@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "utf-8";
 
 @mixin flex($direction: column, $inline: block) {
   display: if ($inline == block, flex, inline-flex);
