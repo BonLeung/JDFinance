@@ -1,6 +1,7 @@
 <template>
   <panel title="新品推荐" class="panel">
     <section class="content">
+      <div class="more">更多尖货 ></div>
       <slider :options="options" :items="items" cname="product-slider"></slider>
     </section>
   </panel>
@@ -45,6 +46,7 @@ export default {
   .swiper-container {
     box-sizing: border-box;
     padding: 0 24px;
+    z-index: 0;
     .swiper-slide {
       a {
         display: inline-block;
@@ -66,7 +68,15 @@ export default {
 .panel {
   @include panel;
   .content {
+    position: relative;
     padding-bottom: 40px;
+    .more {
+      position: absolute;
+      top: -70px;
+      right: 10px;
+      font-size: 28px;
+      color: #999;
+    }
   }
 }
 </style>

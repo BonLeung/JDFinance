@@ -6,6 +6,9 @@
     <borrow></borrow>
     <money></money>
     <product></product>
+    <life></life>
+    <m-footer></m-footer>
+    <navbar></navbar>
   </div>
 </template>
 
@@ -16,6 +19,9 @@ import Novice from './novice'
 import Borrow from './borrow'
 import Money from './money'
 import Product from './product'
+import Life from './life'
+import MFooter from '../public/footer'
+import Navbar from '../public/navbar'
 
 export default {
   components: {
@@ -24,7 +30,10 @@ export default {
     Novice,
     Borrow,
     Money,
-    Product
+    Product,
+    Life,
+    MFooter,
+    Navbar
   }
 }
 </script>
