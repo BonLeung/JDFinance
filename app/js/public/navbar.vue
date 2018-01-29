@@ -1,6 +1,6 @@
 <template>
-  <panel title="导航条" :class="$style.panel">
-    <ul :class="$style.content">
+  <panel class="panel">
+    <ul class="content">
       <li>
        <router-link :to="{name: 'home'}">
          <img src="//img12.360buyimg.com/jrpmobile/jfs/t3451/188/644771475/2428/800d7cb7/580f2435Nbfaa8055.png?width=66&height=66" alt="">
@@ -26,7 +26,7 @@
        </router-link>
       </li>
       <li>
-       <router-link :to="{name: 'home'}">
+       <router-link to="/me">
          <img src="//img12.360buyimg.com/jrpmobile/jfs/t3340/68/639059082/2591/800e2d6b/580f51cdN4caf20b2.png?width=66&height=66" alt="">
          <p>我的</p>
        </router-link>
@@ -45,7 +45,7 @@ export default {
 }
 </script>
 
-<style lang="scss" module>
+<style lang="scss" scoped>
 @import '~css/element.scss';
 
 .panel {
@@ -66,16 +66,21 @@ export default {
       text-align: center;
       a {
         text-decoration: none;
-      }
-      img {
-        width: 44px;
-        height: 44px;
-        display: inline-block;
-        margin: 12px auto;
-      }
-      p {
-        font-size: 22px;
-        color: #656565;
+        &.router-link-active {
+          p {
+            color: red;
+          }
+        }
+        img {
+          width: 44px;
+          height: 44px;
+          display: inline-block;
+          margin: 12px auto;
+        }
+        p {
+          font-size: 22px;
+          color: #656565;
+        }
       }
     }
   }

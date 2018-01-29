@@ -4,6 +4,7 @@
     <slider></slider>
     <daily></daily>
     <in></in>
+    <more></more>
     <m-footer cname="mfooter"></m-footer>
     <navbar></navbar>
   </div>
@@ -16,6 +17,7 @@ import Navbar from '../public/navbar'
 import Slider from './rslider'
 import Daily from './daily'
 import In from './in'
+import More from './more'
 
 export default {
   components: {
@@ -24,7 +26,8 @@ export default {
     Navbar,
     Slider,
     Daily,
-    In
+    In,
+    More
   }
 }
 </script>
