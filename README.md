@@ -1,3 +1,3 @@
 # JDFinance 
 
-Imitate JDFinance by using component
+Imitate JDFinance by using components
